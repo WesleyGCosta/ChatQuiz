@@ -349,14 +349,54 @@ def ProcessarResposta(nivel, nome):
         else:
             print(f'Resposta Errada!{os.linesep}Resposta Certa: Neutsã{os.linesep}')
 
-        if resultado >= 8:
-            print('Incrível ' + nome + f'! Você Acertou ' + repr(resultado) + f' de 10')
+        print('-----------------------------------')
+        resposta = input(f'11) - Quando Jesus nasceu, onde Ele foi colocado?{os.linesep}Digite Sua Resposta: ')
+        if resposta == 'Manjedoura' or resposta == 'manjedoura' or resposta == 'Manjedora' or resposta == 'manjedora':
+            print(f'Resposta Certa{os.linesep}')
+            resultado += 1
+        else:
+            print(f'Resposta Errada!{os.linesep}Resposta Certa: Manjedoura{os.linesep}')
+
+        print('-----------------------------------')
+        resposta = input(f'12) - Quem foi o 'assistente' do profeta Elias?{os.linesep}Digite Sua Resposta: ')
+        if resposta == 'Eliseu' or resposta == 'eliseu':
+            print(f'Resposta Certa{os.linesep}')
+            resultado += 1
+        else:
+            print(f'Resposta Errada!{os.linesep}Resposta Certa: Eliseu{os.linesep}')
+        
+        print('-----------------------------------')
+        resposta = input(f'13) - Quem era a mãe de Samuel?{os.linesep}Digite Sua Resposta: ')
+        if resposta == 'Ana' or resposta == 'ana':
+            print(f'Resposta Certa{os.linesep}')
+            resultado += 1
+        else:
+            print(f'Resposta Errada!{os.linesep}Resposta Certa: Ana{os.linesep}')
+
+        print('-----------------------------------')
+        resposta = input(f'14) - Quem a Bíblia diz que foi pior que todos os reis de Israel?{os.linesep}Digite Sua Resposta: ')
+        if resposta == 'Acabe' or resposta == 'acabe' or resposta == 'Neutsa' or resposta == 'neustsa':
+            print(f'Resposta Certa{os.linesep}')
+            resultado += 1
+        else:
+            print(f'Resposta Errada!{os.linesep}Resposta Certa: Acabe{os.linesep}')
+
+        print('-----------------------------------')
+        resposta = input(f'15) - Quem era a mãe de Ismael, filho de Abraão?{os.linesep}Digite Sua Resposta: ')
+        if resposta == 'Hagar' or resposta == 'hagar':
+            print(f'Resposta Certa{os.linesep}')
+            resultado += 1
+        else:
+            print(f'Resposta Errada!{os.linesep}Resposta Certa: Hagar{os.linesep}')
+
+        if resultado >= 12:
+            print('Incrível ' + nome + f'! Você Acertou ' + repr(resultado) + f' de 15')
             print(f'Que tal desafiar os seus amigos e ver se eles vão tão bem quanto você?{os.linesep}-----------------------------------')
-        elif resultado >= 5:
-            print('Parabéns ' + nome + f'! Você Acertou ' + repr(resultado) + f' de 10')
+        elif resultado >= 8:
+            print('Parabéns ' + nome + f'! Você Acertou ' + repr(resultado) + f' de 15')
             print(f'Que tal tentar mais uma vez? Quem sabe você consegue acertar todas na próxima!{os.linesep}-----------------------------------')
         else:
-            print(f'Você Acertou ' + repr(resultado) + f' de 10')
+            print(f'Você Acertou ' + repr(resultado) + f' de 15')
             print(f'Que tal tentar mais uma vez? Quem sabe você consegue acertar todas na próxima!{os.linesep}-----------------------------------')
 
 
